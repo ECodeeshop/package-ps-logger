@@ -1,7 +1,7 @@
 <?php
-namespace PsModule\PsLogger;
+namespace Codeeshop;
 
-class Logger
+class Log
 {
     private $handle;
     private $logPath;
