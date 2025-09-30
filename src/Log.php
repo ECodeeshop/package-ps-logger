@@ -1,5 +1,5 @@
 <?php
-namespace Codeeshop;
+namespace Codeeshop\PsModuleLogger;
 
 class Log
 {
@@ -10,12 +10,12 @@ class Log
     public function __construct($moduleName, $filename = 'info.log')
     {
         $this->debugEnabled = \Configuration::get(strtoupper($moduleName) . '_DEBUG_STATUS', null, null, null, true);
-        
+
         if ($this->debugEnabled) {
-            $logsDir = _PS_MODULE_DIR_ . $moduleName . '/logs/';            
+            $logsDir = _PS_MODULE_DIR_ . $moduleName . '/logs/';
             if (!is_dir($logsDir)) {
                 mkdir($logsDir, 0755, true);
-            }            
+            }
 
             $this->logPath = $logsDir . date('Y-m-d') . '_' . $filename;
             $this->handle = fopen($this->logPath, 'a');

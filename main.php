@@ -3,7 +3,7 @@
 error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
 
 include 'vendor/autoload.php';
-$copy = new Codeeshop\Log('ready');
+$copy = new PsModule\Codeeshop\Log('ready');
 
 print_r('<center>================== Start ==================</center>');
 
