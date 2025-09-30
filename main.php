@@ -3,7 +3,7 @@
 error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
 
 include 'vendor/autoload.php';
-$copy = new PsModule\Logger\Logger('ready');
+$copy = new PsModule\PsLogger\Logger('ready');
 
 print_r('<center>================== Start ==================</center>');
 

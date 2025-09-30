@@ -1,21 +1,19 @@
 {
-    "name": "codeeshop/logger",
+    "name": "codeeshop/ps-module-logger",
     "description": "Reusable Logger for PrestaShop modules",
     "license": "MIT",
     "keywords":
     [
-        "PrestaShop",
-        "PHP Logger",
-        "Prestashop Module Log",
-        "Prestashop Module Logger",
-        "Prestashop Module Helper",
-        "Prestashop Module"
+        "prestashop",
+        "logger",
+        "module",
+        "php"
     ],
     "autoload":
     {
         "psr-4":
         {
-            "PsModule\\Logger\\": "src/"
+            "PsModule\\PsLogger\\": "src/"
         }
     },
     "authors":

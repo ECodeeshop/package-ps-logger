@@ -1,5 +1,5 @@
 <?php
-namespace PsModule\Logger;
+namespace PsModule\PsLogger;
 
 class Logger
 {
